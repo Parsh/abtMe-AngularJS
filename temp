@@ -1,0 +1,33 @@
+
+
+    <!--Row 4-->
+    <div class="row">
+
+        <div class="divider-new">
+            <h2 class="h2-responsive  wow bounceIn" data-wow-delay=".3s"> Developing Android Too </h2>
+        </div>
+
+    </div>
+    <!--/Row 4-->
+
+    <!--Row 5-->
+    <div class="row">
+
+        <div class="col-md-4 col-sm-12">
+
+        </div>
+        <div class="col-md-8 col-sm-12">
+            <!--Card-->
+            <div class="card hoverable waves-effect ">
+
+                <!--Card image-->
+                <div class="view hm-zoom z-depth-4">
+                    <img src="../img/webDev/android.png" class="img-fluid img-responsive">
+
+                </div>
+                <!--/.Card image-->
+
+            </div>
+
+        </div>
+        <!--/Row 5-->

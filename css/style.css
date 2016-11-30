@@ -1,0 +1,52 @@
+html, body, .view {
+    height: 100%;
+}
+
+.ml.view {
+    background: url(" ../img/homeImage/MachineLearning.jpg ") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.web.view {
+    background: url(" ../img/homeImage/web-dev.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.space.view {
+    background: url(" ../img/homeImage/space3.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.webdev.view {
+    background: url(" ../img/webDev/office1.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.webdev1.view {
+    background: url(" ../img/webDev/web-dev1.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.flex-center {
+    color: #fff;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px
+}
