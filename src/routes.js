@@ -23,7 +23,13 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
         .state('webDev', {
 
             url: '/webAppsDevelopment',
-            templateUrl: 'src/templates/webDev.html'
+            templateUrl: 'src/templates/webDev.html',
+            controller: 'webDevController as webCtrl'
 
         })
+        .state('certificate', {
+            url: '/certificate',
+            templateUrl: 'src/templates/certificate.html',
+            controller: 'CertificateController as cCtrl'
+        });
 }
