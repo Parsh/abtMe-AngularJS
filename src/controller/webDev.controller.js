@@ -8,11 +8,9 @@ function webDevController(CertificateService) {
 
     webCtrl = this
 
-    webCtrl.getCertificate = function(certificateId) {
-        webCtrl.id = certificateId
+    webCtrl.getCertificate = function(certificateName) {
 
-
-        CertificateService.setCertificateID(webCtrl.id);
+        CertificateService.setCertificateName(certificateName);
 
     }
 

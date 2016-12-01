@@ -8,20 +8,14 @@ function CertificateController(CertificateService) {
 
     cCtrl = this;
 
-    cCtrl.id = CertificateService.getCertificateID();
+    certificateList = CertificateService.getCertificateList();
 
+    certificateName = CertificateService.getCertificateName();
 
+    for (var each of certificateList) {
 
-    if (cCtrl.id == 1) {
-        cCtrl.certificate = "img/certificates/Node.jpg";
-    }
-    if (cCtrl.id == 2) {
-        cCtrl.certificate = "img/certificates/Angular.jpg";
-    }
-    if (cCtrl.id == 3) {
-        cCtrl.certificate = "img/certificates/Bootstrap.jpg";
-    }
-    if (cCtrl.id == 4) {
-        cCtrl.certificate = "img/certificates/Android.jpg";
+        if (each.name == certificateName) {
+            cCtrl.certificate = "img/certificates/" + each.img
+        }
     }
 }

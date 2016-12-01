@@ -6,15 +6,42 @@ CertificateService.$inject = ['$cookies', '$cookieStore']
 function CertificateService($cookies, $cookieStore) {
     service = this;
 
-    service.setCertificateID = function(index) {
-        service.id = index;
+    certificateList = [{
+        name: 'Android',
+        img: 'Android.jpg'
+    }, {
+        name: 'Angular',
+        img: 'Angular.jpg'
+    }, {
+        name: 'Bootstrap',
+        img: 'Bootstrap.jpg'
+    }, {
+        name: 'HTMLCSS&JavaScript',
+        img: 'HTMLCSS&JavaScript.jpg'
+    }, {
+        name: 'Java',
+        img: 'Java.jpg'
+    }, {
+        name: 'Node',
+        img: 'Node.jpg'
+    }, {
+        name: 'OOP',
+        img: 'OOP.jpg'
+    }];
 
-        $cookieStore.put('certificateID', service.id);
+    service.getCertificateList = function() {
+        return certificateList;
     }
 
-    service.getCertificateID = function() {
-        service.id = $cookieStore.get('certificateID');
+    service.setCertificateName = function(certificateName) {
+        service.certificateName = certificateName;
 
-        return service.id;
+        $cookieStore.put('certificateName', service.certificateName);
+    }
+
+    service.getCertificateName = function() {
+        service.certificateName = $cookieStore.get('certificateName');
+
+        return service.certificateName;
     }
 }
