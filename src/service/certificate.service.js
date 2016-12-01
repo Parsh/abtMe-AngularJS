@@ -1,9 +1,9 @@
 angular.module('myWebApp')
     .service('CertificateService', CertificateService);
 
-CertificateService.$inject = ['$cookies', '$cookieStore']
+CertificateService.$inject = ['$cookies', '$cookieStore', '$q', '$timeout']
 
-function CertificateService($cookies, $cookieStore) {
+function CertificateService($cookies, $cookieStore, $q, $timeout) {
     service = this;
 
     certificateList = [{
@@ -73,5 +73,21 @@ function CertificateService($cookies, $cookieStore) {
         service.certificateName = $cookieStore.get('certificateName');
 
         return service.certificateName;
+    }
+
+    service.explicitTransitionPause = function() {
+        var deferred = $q.defer()
+
+        console.log('Running2')
+        $timeout(function() {
+            if (true) {
+                deferred.resolve("Parsh")
+            } else {
+                deferred.reject("parsh")
+            }
+        }, 2000)
+        return deferred.promise;
+
+
     }
 }
