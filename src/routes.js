@@ -17,7 +17,8 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
         .state('mLAndAI', {
 
             url: '/machineLearningAndAI',
-            templateUrl: 'src/templates/MLandAI.html'
+            templateUrl: 'src/templates/MLandAI.html',
+            controller: 'MLController as mlCtrl'
 
         })
         .state('webDev', {

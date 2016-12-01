@@ -42,6 +42,14 @@ html, body, .view {
     background-size: cover;
 }
 
+.mLAndAI.view {
+    background: url(" ../img/mLAndAI/machineLearning.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .flex-center {
     color: #fff;
 }

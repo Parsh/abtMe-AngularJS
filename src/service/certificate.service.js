@@ -27,6 +27,36 @@ function CertificateService($cookies, $cookieStore) {
     }, {
         name: 'OOP',
         img: 'OOP.jpg'
+    }, {
+        name: 'DatabasesWithPython',
+        img: 'DatabasesWithPython.jpg'
+    }, {
+        name: 'PythonFundamental',
+        img: 'PythonFundamental.jpg'
+    }, {
+        name: 'PythonCapstone',
+        img: 'PythonCapstone.jpg'
+    }, {
+        name: 'PythonDataStructure',
+        img: 'PythonDataStructure.jpg'
+    }, {
+        name: 'PythonSpecialization',
+        img: 'PythonSpecialization.jpg'
+    }, {
+        name: 'PythonToAccessWebData',
+        img: 'PythonToAccessWebData.jpg'
+    }, {
+        name: 'ML-Classification',
+        img: 'ML-Classification.jpg'
+    }, {
+        name: 'ML-ClusteringAndRetrieval',
+        img: 'ML-ClusteringAndRetrieval.jpg'
+    }, {
+        name: 'ML-Foundation',
+        img: 'ML-Foundation.jpg'
+    }, {
+        name: 'ML-Regression',
+        img: 'ML-Regression.jpg'
     }];
 
     service.getCertificateList = function() {
