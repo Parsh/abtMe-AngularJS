@@ -19,13 +19,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
             url: '/machineLearningAndAI',
             templateUrl: 'src/templates/MLandAI.html',
             controller: 'MLController as mlCtrl',
-            resolve: {
-                loadImg: ['CertificateService', function(CertificateService) {
-                    console.log('Running')
-                    return CertificateService.explicitTransitionPause();
 
-                }]
-            }
 
         })
         .state('webDev', {
