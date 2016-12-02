@@ -33,5 +33,12 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
             url: '/certificate',
             templateUrl: 'src/templates/certificate.html',
             controller: 'CertificateController as cCtrl'
-        });
+
+        })
+        .state('aboutMe', {
+
+            url: '/aboutMe',
+            templateUrl: 'src/templates/aboutMe.html'
+
+        })
 }
