@@ -13,6 +13,9 @@ function CertificateService($cookies, $cookieStore) {
         name: 'Angular',
         img: 'Angular.jpg'
     }, {
+        name: 'AngularJHU',
+        img: 'AngularJHU.jpg'
+    }, {
         name: 'Bootstrap',
         img: 'Bootstrap.jpg'
     }, {
